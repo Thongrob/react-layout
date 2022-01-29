@@ -3,13 +3,11 @@ import Footer from "../shared/Footer";
 
 function MainLayout({children}) {
   return (
-      <div>
+      <>
           <Navbar />
-          <div className="container pt-5">
-              {children}
-          </div>
+          {children}
           <Footer />
-      </div>
+      </>
   );
 }
 

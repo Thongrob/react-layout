@@ -1,16 +1,16 @@
 import {Route ,Routes} from 'react-router-dom'
-import About from './About';
-import Contact from './Contact';
 import Home from './Home';
+import About from './About';
 import Service from './Service';
+import Contact from './Contact';
 
 function App() {
   return (
     <Routes>
-      <Route path="Home" element={<Home />} />
-      <Route path="About" element={<About />} />
-      <Route path="Service" element={<Service />} />
-      <Route path="Contact" element={<Contact />} />
+      <Route path="/" exact={true}  element={<Home />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/service" element={<Service />} />
+      <Route path="/contact" element={<Contact />} />
     </Routes>
   );
 }
